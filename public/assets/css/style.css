@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+}
+
+.navbar-icon {
+    font-size: 24px;
+}
+
+.navbar-burger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-page ul,
+.navbar-sosmed ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-page ul li,
+.navbar-sosmed ul li {
+    margin: 0 10px;
+}
+
+.navbar-page ul li a,
+.navbar-sosmed ul li i {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    color: #333;
+}
+.container hr {
+    margin: 30px auto;
+    width: 50%;
+    border: 1px solid #ddd;
+}
+.container h2 {
+    font-size: 2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.container p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navbar-page {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-page ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-page ul li {
+        margin: 10px 0;
+    }
+
+    .navbar-burger {
+        display: block;
+    }
+
+    .navbar-page.active {
+        display: flex;
+    }
+}
